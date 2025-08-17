@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Airline Manager</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Airline Manager</h1>
+<section id="add-flight">
+<h2>Add Flight</h2>
+<form id="flight-form">
+<input type="text" id="flight-number" placeholder="Flight Number" required>
+<input type="text" id="origin" placeholder="Origin" required>
+<input type="text" id="destination" placeholder="Destination" required>
+<input type="text" id="aircraft" placeholder="Aircraft" required>
+<input type="date" id="date" required>
+<button type="submit">Add Flight</button>
+</form>
+</section>
+<section id="flight-list">
+<h2>Scheduled Flights</h2>
+<table>
+<thead>
+<tr><th>#</th><th>Origin</th><th>Destination</th><th>Aircraft</th><th>Date</th><th>Actions</th></tr>
+</thead>
+<tbody id="flights-table"></tbody>
+</table>
+</section>
+<script src="app.js"></script>
+</body>
+</html>
