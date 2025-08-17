@@ -27,3 +27,9 @@ A lightweight browser-based airline manager for tracking your own flight simulat
 2. Add flights using the form. Flights are saved locally so your progress stays on your machine.
 
 Feel free to expand it with additional features like revenue tracking, aircraft maintenance, or route planning.
+
+### Build an Executable
+
+1. Navigate to `airline-manager`.
+2. Run `npm install` to install dependencies.
+3. Run `npm run build-win` to generate `AirlineManager.exe`.
