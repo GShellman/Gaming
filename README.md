@@ -16,3 +16,14 @@ This repository contains a simple Google Apps Script that allows you to play a m
 3. The game displays a dialog when you win or lose.
 
 Feel free to modify the script to add more features such as additional Pokemon, special moves, or multiple battles.
+
+## Airline Manager Game
+
+A lightweight browser-based airline manager for tracking your own flight simulator trips. All data is stored in your browser's local storage.
+
+### Setup
+
+1. Open `airline-manager/index.html` in a web browser.
+2. Add flights using the form. Flights are saved locally so your progress stays on your machine.
+
+Feel free to expand it with additional features like revenue tracking, aircraft maintenance, or route planning.
