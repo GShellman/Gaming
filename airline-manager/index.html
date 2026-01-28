@@ -1,32 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>Airline Manager</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aztekisches Textabenteuer</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>Airline Manager</h1>
-<section id="add-flight">
-<h2>Add Flight</h2>
-<form id="flight-form">
-<input type="text" id="flight-number" placeholder="Flight Number" required>
-<input type="text" id="origin" placeholder="Origin" required>
-<input type="text" id="destination" placeholder="Destination" required>
-<input type="text" id="aircraft" placeholder="Aircraft" required>
-<input type="date" id="date" required>
-<button type="submit">Add Flight</button>
-</form>
-</section>
-<section id="flight-list">
-<h2>Scheduled Flights</h2>
-<table>
-<thead>
-<tr><th>#</th><th>Origin</th><th>Destination</th><th>Aircraft</th><th>Date</th><th>Actions</th></tr>
-</thead>
-<tbody id="flights-table"></tbody>
-</table>
-</section>
+<div class="app">
+  <header>
+    <p class="eyebrow">Kalenderstein der Fünften Sonne</p>
+    <h1>Aztekisches Textabenteuer</h1>
+    <p class="subtitle">Erkunde Tenochtitlan, sammle Zeichen der Götter und entscheide über das Schicksal der Stadt.</p>
+  </header>
+
+  <section class="panel">
+    <div class="controls">
+      <label for="player-name">Dein Name</label>
+      <input id="player-name" type="text" placeholder="z.B. Yaotl">
+      <button id="start-btn" type="button">Abenteuer beginnen</button>
+      <button id="restart-btn" type="button">Neu starten</button>
+    </div>
+    <div class="status">
+      <div>
+        <span class="label">Sonnen-Gunst</span>
+        <span id="favor">0</span>
+      </div>
+      <div>
+        <span class="label">Mut</span>
+        <span id="courage">0</span>
+      </div>
+      <div>
+        <span class="label">Inventar</span>
+        <span id="inventory">–</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="story">
+    <h2 id="node-title">Bereit für deine Reise?</h2>
+    <div id="node-text" class="node-text">
+      <p>Gib deinen Namen ein und beginne ein Abenteuer zwischen Tempeln, Kanälen und den Zeichen der Sonne.</p>
+    </div>
+    <div id="choices" class="choices"></div>
+  </section>
+
+  <section class="log">
+    <h3>Chronik</h3>
+    <ul id="log"></ul>
+  </section>
+</div>
 <script src="app.js"></script>
 </body>
 </html>
